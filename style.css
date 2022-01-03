@@ -1,0 +1,355 @@
+body {
+  background-color: black;
+}
+h1 {
+  color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+.upper-div-for-chess-board {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 670px;
+  height: 670px;
+  font-size: 1.5rem;
+}
+.board {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid black;
+  height: 610px;
+  width: 610px;
+  cursor: pointer;
+  z-index: 1;
+}
+.black-pieces, .white-pieces, .black-pawns {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid black;
+  height: 610px;
+  width: 610px;
+  cursor: pointer;
+  z-index: 2;
+}
+#white-rook-1 {
+  z-index: 3;
+}
+.square {
+  height: 75px;
+  width: 75px;
+}
+.black {
+  background: black;
+}
+.white {
+  background: white;
+}
+.numbers {
+  height: 100%;
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  left: 0;
+  top: 0;
+  text-align: center;
+  color: white;
+}
+.letters {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+li {
+  list-style: none;
+}
+h1 {
+  text-align: center;
+}
+img {
+  height: 20%;
+}
+#black-pawns img {
+   height: 14%;
+   width: 14%;
+}
+#black-pawns-8 img {
+  height: 50%;
+  width: 50%;
+}
+#black-pawns-7 img {
+  height: 30%;
+  width: 30%;
+}
+.A1 {
+  position: absolute;
+  height: 13%;
+  width: 13%;
+}
+.A2{
+  position: absolute;
+  top: 12%;
+  height: 13%;
+  width: 13%;
+}
+.A3 {
+  position: absolute;
+  top: 25%;
+  height: 13%;
+  width: 13%;
+
+}
+.A4 {
+  position: absolute;
+  top: 37%;
+  height: 13%;
+  width: 13%;
+}
+.A5 {
+  position: absolute;
+  top: 50%;
+  height: 13%;
+  width: 13%;
+}
+.A6 {
+  position: absolute;
+  top: 62.5%;
+  height: 13%;
+  width: 13%;
+}
+.A7 {
+  position: absolute;
+  top: 75%;
+  height: 13%;
+  width: 12.5%;
+}
+.A8 {
+  position: absolute;
+  top: 0%;
+  height: 110%;
+  width: 110%;
+}
+.B1 {
+  position: absolute;
+  top: 0%;
+  left: 12%;
+  height: 13%;
+  width: 13%;
+}
+.B2 {
+  position: absolute;
+  top: 12.5%;
+  left: 12.5%;
+  height: 12%;
+  width: 12.5%;
+}
+.B3 {
+  position: absolute;
+  top:25%;
+  left: 12.5%;
+  height: 12.6%;
+  width: 12.5%;
+}
+.B4 {
+  position: absolute;
+  top: 37%;
+  left: 12.5%;
+  height: 13%;
+  width: 12.5%;
+}
+.B5 {
+  position: absolute;
+  top: 50%;
+  left: 12.5%;
+  height: 13%;
+  width: 12.5%;
+}
+.B6 {
+  position: absolute;
+  top: 62%;
+  left: 12.5%;
+  height: 13%;
+  width: 12.5%;
+}
+.B7{
+  position: absolute;
+  top: 75%;
+  left: 12.5%;
+  height: 13%;
+  width: 12.5%;
+}
+.B8 {
+  position: absolute;
+  top: 0%;
+  height: 110%;
+  width: 110%;
+
+}
+.C1 {
+  position: absolute;
+  left: 25%;
+  height: 13%;
+  width: 13%;
+}
+.C2 {
+  position: absolute;
+  left: 25%;
+  top: 12%;
+  height: 13%;
+  width: 13%;
+}
+.C3 {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  height: 13%;
+  width: 13%;
+}
+.C4{
+  position: absolute;
+  left: 25%;
+  top: 37%;
+  height: 13%;
+  width: 13%;
+}
+.C5 {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  height: 13%;
+  width: 13%;
+}
+.C6 {
+  position: absolute;
+  left: 25%;
+  top: 62%;
+  height: 13%;
+  width: 13%;
+}
+.C7 {
+  position: absolute;
+  left: 25%;
+  top: 75%;
+  height: 13%;
+  width: 13%;
+}
+.C8 {
+  position: absolute;
+  top: 0%;
+  height: 110%;
+  width: 110%;
+}
+.D1, .D2, .D3, .D4, .D5, .D6, .D7, .D8 {
+  position: absolute;
+  left: 37.5%;
+  height: 13%;
+  width: 13%;
+}
+.D2, .E2, .F2, .G2, .H2{
+  top: 12%;
+}
+.D3, .E3, .F3, .G3, .H3 {
+  top: 25%;
+}
+.D4, .E4, .F4, .G4, .H4 {
+  top: 37%;
+}
+.D5, .E5, .F5, .G5, .H5 {
+  top: 50%;
+}
+.D6, .E6, .F6, .G6, .H6 {
+  top: 62%;
+}
+.D7, .E7, .F7, .G7, .H7 {
+  top: 75%;
+}
+.D8, .E8, .F8, .G8, .H8{
+  top: 87%;
+}
+
+.E1, .E2, .E3, .E4, .E5, .E6, .E7, .E8{
+  position: absolute; 
+  left: 50%;
+  height: 13%;
+  width: 13%;
+}
+.F1, .F2, .F3, .F4, .F5, .F6, .F7, .F8{
+  position: absolute; 
+  left: 62%;
+  height: 13%;
+  width: 13%;
+}
+.G1, .G2, .G3, .G4, .G5, .G6, .G7, .G8{
+  position: absolute; 
+  left: 75%;
+  height: 13%;
+  width: 13%;
+}
+.H1, .H2, .H3, .H4, .H5, .H6, .H7, .H8{
+  position: absolute; 
+  left: 87%;
+  height: 13%;
+  width: 13%;
+
+}
+.D8{
+  position: absolute;
+  top: 0%;
+  height: 110%;
+  width: 110%;
+  left: -110%;
+}
+.E8 {
+  position: absolute;
+  top: 0%;
+  height: 110%;
+  width: 110%;
+  left: 110%; 
+}
+.F8 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 110%;
+  width: 110%;
+}
+.G8 {
+  position: absolute;
+  top: 0%;
+  height: 110%;
+  width: 110%;
+  left: 0%; 
+}
+.H8 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 110%;
+  width: 110%;
+}
+
+
+#AClass img, #BClass img, #CClass img, #DClass img, #EClass img, #FClass img, #GClass img, #HClass img {
+  height: 100%;
+  width: 100%;
+}
